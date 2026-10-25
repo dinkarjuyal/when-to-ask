@@ -1,0 +1,8 @@
+openai>=1.0
+torch
+transformers
+peft
+trl
+bitsandbytes
+datasets
+vllm  # serving only

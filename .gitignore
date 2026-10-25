@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.json
+*.jsonl
+*.log
+adapter*/
+STATUS
+questbench_data/
