@@ -36,10 +36,10 @@ steps = [
      "Entropy finds consequence,\nnot value", LIGHT["blue"]),
     ("2. Notice what the\nplan missed?", "Reflection prompt when terminal\nsurfaces planted solution.sh",
      "Sharpens an existing\ninclination; can't create one", LIGHT["orange"]),
-    ("3. When is a test\nworth its cost?", "Priced tests in a DiscoveryWorld-\nstyle env; checked VOI traces",
-     "Works, and transfers to\nreal DiscoveryWorld", LIGHT["green"]),
-    ("4. When is a question\nneeded?", "Why-traces, sim episodes, dose\nsweep, prompting (QuestBench)",
-     "Fails: models can't tell\nwhen they know enough", LIGHT["red"]),
+    ("3. When is a test\nworth its cost?", "Each test has a price. Train on\nthe model's own reasoning about\nwhether a test pays off\n(math checked)",
+     "Works: it learns to pay\nfor a test only when worth it,\nand carries this over to\nreal DiscoveryWorld", LIGHT["green"]),
+    ("4. When does a model\nneed to ask?", "Puzzles solvable only by asking\n(QuestBench). Teach by worked\nexamples, then by instructions",
+     "Fails: models can't tell\nwhether they already have\nenough information to answer", LIGHT["red"]),
 ]
 w, gap = 0.2, 0.065
 for i, (q, how, res, c) in enumerate(steps):
